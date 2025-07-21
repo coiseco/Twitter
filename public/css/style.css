@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Lato-Medium', sans-serif;
+    src: url('/fonts/Lato-Medium.woff') format('woff'),
+         url('/fonts/Lato-Medium.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato-Regular', sans-serif;
+    src: url('/fonts/Lato-Regular.woff') format('woff'),
+         url('/fonts/Lato-Regular.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body{
+    margin: auto;
+    max-width: 360px;
+    min-width: 360px;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-logo-wrapper{
+    margin: 24px 0px 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-header-wrapper{
+    margin: 0px 16px 22px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-header-text{
+    font-family: 'Lato-Medium', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    margin: 0;
+}
+
+.banner-buttons-wrapper{
+    margin: 0px 16px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.button{
+    padding: 15px 0px 15px 0px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    border: 1px solid #0057FF;
+    font-family: 'Lato-Medium', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.banner-buttons-sign_up_button{
+    background-color: #0057FF;
+    
+}
+
+.banner-buttons-sign_in_button{
+    color: #0057FF;
+}
+
+.banner-img-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
