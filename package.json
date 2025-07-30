@@ -1,0 +1,27 @@
+{
+  "type":"module",
+  "name": "twitter",
+  "version": "1.0.0",
+  "description": "learning to make pet-project",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coiseco/Twitter.git"
+  },
+  "keywords": [
+    "[]"
+  ],
+  "author": "ivan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coiseco/Twitter/issues"
+  },
+  "homepage": "https://github.com/coiseco/Twitter#readme",
+  "dependencies": {
+    "chai": "^5.2.1",
+    "mocha": "^11.7.1"
+  }
+}
