@@ -1,34 +1,13 @@
 export default function postSize(string) {
+  let stringCopy = string.slice();
 
-    let switcher = true
-    let splitedString = string.slice()
-    
-    while(switcher){
-
-        if(splitedString.includes("<http") ){
-            
-            splitedString = string.split('<').join(' ').split('>').join(' ')
-        
-        }else if(splitedString.includes("http")){
-            
-            let arrFromString = splitedString.split(' ')
-            let resArr = []
-            
-            for(let el of arrFromString){
-                if(!el.includes('http')){
-                        resArr.push(arrFromString[arrFromString.indexOf(el)])
-                    }
-            }
-            return string =  resArr.join(' ').length
-        } else {
-            switcher = false
-            return string.length
-        }
-
-        
-    }
-    
-    
+  if (stringCopy.includes('<http')) {
+    stringCopy = stringCopy.split('<').join(' ').split('>').join(' ');
+  }
+  if (stringCopy.includes('http')) {
+    const arrFromString = stringCopy.split(' ');
+    stringCopy = arrFromString.filter((el) => !el.includes('http')).join(' ').trim().length;
+    return stringCopy;
+  }
+  return stringCopy.length;
 }
-
-console.log(postSize('Всем привет!<https://github.com>q<https://github.com>Привет! еее https://github.com'))
