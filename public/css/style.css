@@ -16,7 +16,18 @@
 body{
     margin: auto;
     max-width: 360px;
-    min-width: 360px;
+    /* min-width: 360px; */
+    font-family: 'Lato-Regular', sans-serif;
+    font-weight:400 ;
+    color: black;
+}
+
+.text {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato-Regular', sans-serif;
+    font-weight:400 ;
+    color: black;
 }
 
 .banner{
@@ -81,4 +92,137 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.banner-score-wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: #0057FF;
+    gap: 32px;
+    padding: 36px 0;
+}
+
+
+.score-header{
+    font-family: 'Lato-Regular', sans-serif;
+    font-weight:400 ;
+    font-size: 48px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
+
+.score-text{
+    font-family: 'Lato-Regular', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.last-messages-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 42px 16px 31px 16px;
+}
+
+.last-messages-header {
+    font-size: 24px;
+    margin: 0 0 24px 0;
+    padding: 0;
+}
+
+.messages_list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.messages_list-message-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 16px;
+}
+
+.message-user_information_and_message_text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message-user_information-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.message-user_information{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.user_information-user_name{
+    font-size: 14px;
+    color: #1D1E22;
+    font-weight: bold;
+}
+
+.user_information-user_nickname {
+    font-size: 14px;
+    color: #ABACB1;
+
+}
+
+.message-time_ago {
+    font-size: 10px;
+    color: #ABACB1;
+    text-align: right;
+}
+
+.message-content-text {
+    font-size: 16px;
+    color: #1D1E22;
+}
+
+.message-reactions-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    gap: 32px;
+}
+
+.message-reaction-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    gap: 12px;
+}
+
+.message-reactions-forwards-counter {
+    font-size: 14px;
+    color: #B1B1B1;
+}
+
+.message-reactions-likes-counter {
+    font-size: 14px;
+    color: #B1B1B1;
+}
+
+.message-reactions-sends-counter {
+    font-size: 14px;
+    color: #B1B1B1;
+}
+
+.message-user_avatar {
+    border-radius: 35px;
+}
+
+.message-contetn-img {
+    margin-top: 10px;
 }
