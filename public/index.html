@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
+    <div class="blackout"></div>
     <section class="banner">
         <div class="banner-wrapper">
             <div class="banner-logo-wrapper">
@@ -18,11 +21,12 @@
                 </h3>
             </div>
             <div class="banner-buttons-wrapper">
-                <button class="banner-buttons-sign_up_button button">Зарегистрироваться</button>
-                <button class="banner-buttons-sign_in_button button">Войти</button>
+                <button class="banner-buttons-sign_up_button button sign-in-button">Зарегистрироваться</button>
+                <button class="banner-buttons-sign_in_button button log-in-button">Войти</button>
             </div>
             <div class="banner-img-wrapper">
-                <img src="./css/img/banner-img.png" alt="image group of people, seating near the fire in camp and telling histories ">
+                <img src="./css/img/banner-img.png"
+                    alt="image group of people, seating near the fire in camp and telling histories ">
             </div>
             <div class="banner-score-wrapper">
                 <div class="score-users_counter-wrapper">
@@ -45,138 +49,156 @@
             <h4 class="last-messages-header">Последние сообщения</h4>
             <div class="messages_list-wrapper">
                 <div class="messages_list-message-wrapper">
-                <div class="message-user_avatar-wrapper">
-                    <img src="./css/img/vinsent-avatar.png" alt="user avatar image" class="message-user_avatar">
-                </div>
-                <div class="message-user_information_and_message_text-wrapper">
-                    <div class="message-user_information-wrapper">
-                        <div class="message-user_information">
-                            <p class="user_information-user_name text">Винсет Вега</p>
-                            <p class="user_information-user_nickname text">@roizmangbn</p>
-                        </div>
-                        <div class="message-time_ago-wrapper">
-                            <p class="message-time_ago text">28 минут<br>назад</p>
-                        </div>
+                    <div class="message-user_avatar-wrapper">
+                        <img src="./css/img/vinsent-avatar.png" alt="user avatar image" class="message-user_avatar">
                     </div>
-                    <div class="message-content-wrapper">
-                        <p class="message-content-text text">У них там все немного не так. В смысле, у них там все точно так же, как и здесь, только немного по-другому.</p>
-                    </div>
-                    <div class="message-reactions-wrapper">
-                        <div class="message-reaction-wrapper">
-                            <img src="./css/img/reactions-arrow.svg" alt="message reactions forwards image" class="message-reactions-forwards-img">
-                            <p class="message-reactions-forwards-counter text">21</p>
+                    <div class="message-user_information_and_message_text-wrapper">
+                        <div class="message-user_information-wrapper">
+                            <div class="message-user_information">
+                                <p class="user_information-user_name text">Винсет Вега</p>
+                                <p class="user_information-user_nickname text">@roizmangbn</p>
+                            </div>
+                            <div class="message-time_ago-wrapper">
+                                <p class="message-time_ago text">28 минут<br>назад</p>
+                            </div>
                         </div>
-                        <div class="message-reaction-wrapper">
-                            <img src="./css/img/reactions-like.svg" alt="message reactions likes image" class="message-reactions-likes-img">
-                            <p class="message-reactions-likes-counter text">23</p>
+                        <div class="message-content-wrapper">
+                            <p class="message-content-text text">У них там все немного не так. В смысле, у них там
+                                все точно так же, как и здесь, только немного по-другому.</p>
                         </div>
-                        <div class="message-reaction-wrapper">
-                            <img src="./css/img/reactions-send.svg" alt="message reactions sends image" class="message-reactions-sends-img">
-                            <p class="message-reactions-sends-counter text">9</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="messages_list-message-wrapper">
-                <div class="message-user_avatar-wrapper">
-                    <img src="./css/img/musk-avatar.png" alt="user avatar image" class="message-user_avatar">
-                </div>
-                <div class="message-user_information_and_message_text-wrapper">
-                    <div class="message-user_information-wrapper">
-                        <div class="message-user_information">
-                            <p class="user_information-user_name text">Elon Musk</p>
-                            <p class="user_information-user_nickname text">@elonmusk</p>
-                        </div>
-                        <div class="message-time_ago-wrapper">
-                            <p class="message-time_ago text">12 часов<br>назад</p>
-                        </div>
-                    </div>
-                    <div class="message-content-wrapper">
-                        <p class="message-content-text text">Has anyone seen web3? I can’t find it.</p>
-                    </div>
-                    <div class="message-reactions-wrapper">
-                        <div class="message-reaction-wrapper">
-                            <img src="./css/img/reactions-arrow.svg" alt="message reactions forwards image" class="message-reactions-forwards-img">
-                            <p class="message-reactions-forwards-counter text">21</p>
-                        </div>
-                        <div class="message-reaction-wrapper">
-                            <img src="./css/img/reactions-like.svg" alt="message reactions likes image" class="message-reactions-likes-img">
-                            <p class="message-reactions-likes-counter text">23</p>
-                        </div>
-                        <div class="message-reaction-wrapper">
-                            <img src="./css/img/reactions-send.svg" alt="message reactions sends image" class="message-reactions-sends-img">
-                            <p class="message-reactions-sends-counter text">9</p>
+                        <div class="message-reactions-wrapper">
+                            <div class="message-reaction-wrapper">
+                                <img src="./css/img/reactions-arrow.svg" alt="message reactions forwards image"
+                                    class="message-reactions-forwards-img">
+                                <p class="message-reactions-forwards-counter text">21</p>
+                            </div>
+                            <div class="message-reaction-wrapper">
+                                <img src="./css/img/reactions-like.svg" alt="message reactions likes image"
+                                    class="message-reactions-likes-img">
+                                <p class="message-reactions-likes-counter text">23</p>
+                            </div>
+                            <div class="message-reaction-wrapper">
+                                <img src="./css/img/reactions-send.svg" alt="message reactions sends image"
+                                    class="message-reactions-sends-img">
+                                <p class="message-reactions-sends-counter text">9</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="messages_list-message-wrapper">
-                <div class="message-user_avatar-wrapper">
-                    <img src="./css/img/burtovoi-avatar.png" alt="user avatar image" class="message-user_avatar">
-                </div>
-                <div class="message-user_information_and_message_text-wrapper">
-                    <div class="message-user_information-wrapper">
-                        <div class="message-user_information">
-                            <p class="user_information-user_name text">Александр</p>
-                            <p class="user_information-user_nickname text">@sportsru</p>
-                        </div>
-                        <div class="message-time_ago-wrapper">
-                            <p class="message-time_ago text">2 часа<br>назад</p>
-                        </div>
+                <div class="messages_list-message-wrapper">
+                    <div class="message-user_avatar-wrapper">
+                        <img src="./css/img/musk-avatar.png" alt="user avatar image" class="message-user_avatar">
                     </div>
-                    <div class="message-content-wrapper">
-                        <p class="message-content-text text">Прикладываю фотки с последнего матча. С каждым днем играю все лучше. Еще пару лет и можно на Олимпиаду ехать!</p>
-                        <img src="./css/img/burtovoi-message-img.png" alt="mans playing table tennis" class="message-contetn-img">
-                    </div>
-                    <div class="message-reactions-wrapper">
-                        <div class="message-reaction-wrapper">
-                            <img src="./css/img/reactions-arrow.svg" alt="message reactions forwards image" class="message-reactions-forwards-img">
-                            <p class="message-reactions-forwards-counter text">21</p>
+                    <div class="message-user_information_and_message_text-wrapper">
+                        <div class="message-user_information-wrapper">
+                            <div class="message-user_information">
+                                <p class="user_information-user_name text">Elon Musk</p>
+                                <p class="user_information-user_nickname text">@elonmusk</p>
+                            </div>
+                            <div class="message-time_ago-wrapper">
+                                <p class="message-time_ago text">12 часов<br>назад</p>
+                            </div>
                         </div>
-                        <div class="message-reaction-wrapper">
-                            <img src="./css/img/reactions-like.svg" alt="message reactions likes image" class="message-reactions-likes-img">
-                            <p class="message-reactions-likes-counter text">23</p>
+                        <div class="message-content-wrapper">
+                            <p class="message-content-text text">Has anyone seen web3? I can’t find it.</p>
                         </div>
-                        <div class="message-reaction-wrapper">
-                            <img src="./css/img/reactions-send.svg" alt="message reactions sends image" class="message-reactions-sends-img">
-                            <p class="message-reactions-sends-counter text">9</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="messages_list-message-wrapper">
-                <div class="message-user_avatar-wrapper">
-                    <img src="./css/img/mia-avatar.png" alt="user avatar image" class="message-user_avatar">
-                </div>
-                <div class="message-user_information_and_message_text-wrapper">
-                    <div class="message-user_information-wrapper">
-                        <div class="message-user_information">
-                            <p class="user_information-user_name text">Мия Уоллес</p>
-                            <p class="user_information-user_nickname text">@mia</p>
-                        </div>
-                        <div class="message-time_ago-wrapper">
-                            <p class="message-time_ago text">1 день<br>назад</p>
-                        </div>
-                    </div>
-                    <div class="message-content-wrapper">
-                        <p class="message-content-text text">Идут по улице три помидора: папа-помидор, мама-помидор и ребенок-помидор. Ребенок-помидор начинает отставать. Папа-помидор разозлился, подбегает к ребенку-помидору, раздавливает всмятку... и говорит: «Догоняй, кетчуп!»</p>
-                    </div>
-                    <div class="message-reactions-wrapper">
-                        <div class="message-reaction-wrapper">
-                            <img src="./css/img/reactions-arrow.svg" alt="message reactions forwards image" class="message-reactions-forwards-img">
-                            <p class="message-reactions-forwards-counter text">21</p>
-                        </div>
-                        <div class="message-reaction-wrapper">
-                            <img src="./css/img/reactions-like.svg" alt="message reactions likes image" class="message-reactions-likes-img">
-                            <p class="message-reactions-likes-counter text">23</p>
-                        </div>
-                        <div class="message-reaction-wrapper">
-                            <img src="./css/img/reactions-send.svg" alt="message reactions sends image" class="message-reactions-sends-img">
-                            <p class="message-reactions-sends-counter text">9</p>
+                        <div class="message-reactions-wrapper">
+                            <div class="message-reaction-wrapper">
+                                <img src="./css/img/reactions-arrow.svg" alt="message reactions forwards image"
+                                    class="message-reactions-forwards-img">
+                                <p class="message-reactions-forwards-counter text">21</p>
+                            </div>
+                            <div class="message-reaction-wrapper">
+                                <img src="./css/img/reactions-like.svg" alt="message reactions likes image"
+                                    class="message-reactions-likes-img">
+                                <p class="message-reactions-likes-counter text">23</p>
+                            </div>
+                            <div class="message-reaction-wrapper">
+                                <img src="./css/img/reactions-send.svg" alt="message reactions sends image"
+                                    class="message-reactions-sends-img">
+                                <p class="message-reactions-sends-counter text">9</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="messages_list-message-wrapper">
+                    <div class="message-user_avatar-wrapper">
+                        <img src="./css/img/burtovoi-avatar.png" alt="user avatar image" class="message-user_avatar">
+                    </div>
+                    <div class="message-user_information_and_message_text-wrapper">
+                        <div class="message-user_information-wrapper">
+                            <div class="message-user_information">
+                                <p class="user_information-user_name text">Александр</p>
+                                <p class="user_information-user_nickname text">@sportsru</p>
+                            </div>
+                            <div class="message-time_ago-wrapper">
+                                <p class="message-time_ago text">2 часа<br>назад</p>
+                            </div>
+                        </div>
+                        <div class="message-content-wrapper">
+                            <p class="message-content-text text">Прикладываю фотки с последнего матча. С каждым днем
+                                играю все лучше. Еще пару лет и можно на Олимпиаду ехать!</p>
+                            <img src="./css/img/burtovoi-message-img.png" alt="mans playing table tennis"
+                                class="message-contetn-img">
+                        </div>
+                        <div class="message-reactions-wrapper">
+                            <div class="message-reaction-wrapper">
+                                <img src="./css/img/reactions-arrow.svg" alt="message reactions forwards image"
+                                    class="message-reactions-forwards-img">
+                                <p class="message-reactions-forwards-counter text">21</p>
+                            </div>
+                            <div class="message-reaction-wrapper">
+                                <img src="./css/img/reactions-like.svg" alt="message reactions likes image"
+                                    class="message-reactions-likes-img">
+                                <p class="message-reactions-likes-counter text">23</p>
+                            </div>
+                            <div class="message-reaction-wrapper">
+                                <img src="./css/img/reactions-send.svg" alt="message reactions sends image"
+                                    class="message-reactions-sends-img">
+                                <p class="message-reactions-sends-counter text">9</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="messages_list-message-wrapper">
+                    <div class="message-user_avatar-wrapper">
+                        <img src="./css/img/mia-avatar.png" alt="user avatar image" class="message-user_avatar">
+                    </div>
+                    <div class="message-user_information_and_message_text-wrapper">
+                        <div class="message-user_information-wrapper">
+                            <div class="message-user_information">
+                                <p class="user_information-user_name text">Мия Уоллес</p>
+                                <p class="user_information-user_nickname text">@mia</p>
+                            </div>
+                            <div class="message-time_ago-wrapper">
+                                <p class="message-time_ago text">1 день<br>назад</p>
+                            </div>
+                        </div>
+                        <div class="message-content-wrapper">
+                            <p class="message-content-text text">Идут по улице три помидора: папа-помидор,
+                                мама-помидор и ребенок-помидор. Ребенок-помидор начинает отставать. Папа-помидор
+                                разозлился, подбегает к ребенку-помидору, раздавливает всмятку... и говорит:
+                                «Догоняй, кетчуп!»</p>
+                        </div>
+                        <div class="message-reactions-wrapper">
+                            <div class="message-reaction-wrapper">
+                                <img src="./css/img/reactions-arrow.svg" alt="message reactions forwards image"
+                                    class="message-reactions-forwards-img">
+                                <p class="message-reactions-forwards-counter text">21</p>
+                            </div>
+                            <div class="message-reaction-wrapper">
+                                <img src="./css/img/reactions-like.svg" alt="message reactions likes image"
+                                    class="message-reactions-likes-img">
+                                <p class="message-reactions-likes-counter text">23</p>
+                            </div>
+                            <div class="message-reaction-wrapper">
+                                <img src="./css/img/reactions-send.svg" alt="message reactions sends image"
+                                    class="message-reactions-sends-img">
+                                <p class="message-reactions-sends-counter text">9</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -185,14 +207,52 @@
             <div class="banner-header-wrapper">
                 <h3 class="banner-header-text">
                     Зарегистрируйтесь
-и узнайте обо всём первым
+                    и узнайте обо всём первым
                 </h3>
             </div>
             <div class="banner-buttons-wrapper">
-                <button class="banner-buttons-sign_up_button button">Зарегистрироваться</button>
-                <button class="banner-buttons-sign_in_button button">Войти</button>
+                <button class="banner-buttons-sign_up_button button sign-in-button">Зарегистрироваться</button>
+                <button class="banner-buttons-sign_in_button button log-in-button">Войти</button>
             </div>
         </div>
-    </section>        
+    </section>
+    <aside class="registration aside">
+        <div class="registration-wrapper">
+            <h4 class="registration-header">Регистрация</h4>
+            <form action="/public/assets/formChecker.js" method="post" class="registration-form form">
+                <input type="email" id="regEmail" class="registration-form-email form-input email" name="regEmail"
+                    placeholder="Электронная почта">
+                    <label for="regEmail" class="error-text">Поле не должно быть пустым</label>   
+                    <label for="regEmail" class="error-text">Адрес не валидный</label>   
+                <input type="password" id="regPass" class="registration-form-password form-input password" name="regPass"
+                    placeholder="Пароль">
+                    <label for="regPass" class="error-text">Поле не должно быть пустым</label>    
+                    <label for="regPass" class="error-text">Пароли не совпадают</label>    
+                <input type="password" id="secRegPass" class="registration-form-password form-input secPassword" name="secRegPass"
+                    placeholder="Подтверждение пароля">
+                    <label for="secRegPass" class="error-text">Поле не должно быть пустым</label>    
+                    <label for="secRegPass" class="error-text">Пароли не совпадают</label>    
+                <button type="button" class="registration-form-button button form-button">Зарегистрироваться</button>    
+            </form>
+        </div>
+    </aside>
+    <aside class="authorization aside">
+        <div class="authorization-wrapper">
+            <h4 class="authorization-header">Авторизация</h4>
+            <form action="/public/assets/formChecker.js" method="post" class="authorization-form form">
+                <input type="email" id="authEmail" class="authorization-form-email form-input email" name="authEmail"
+                    placeholder="Электронная почта">
+                <label for="authEmail" class="error-text">Поле не должно быть пустым</label>   
+                <label for="authEmail" class="error-text">Адрес не валидный</label>    
+                <input type="password" id="authPassword" class="authorization-form-password form-input"
+                    name="authPassword" placeholder="Пароль">
+                <label for="authPassword" class="error-text">Поле не должно быть пустым</label>    
+                <label for="authPassword" class="error-text">Пароли не совпадают</label>    
+                <button type="button" class="authorization-form-button button form-button">Авторизоваться</button>    
+            </form>
+        </div>
+    </aside>
 </body>
+<script src="/public/assets/formChecker.js" type="module"></script>
+<script src="/public/assets/verifyEmail.js" type="module"></script>
 </html>
