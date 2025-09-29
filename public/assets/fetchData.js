@@ -18,8 +18,7 @@ fetch('https://burtovoy.github.io/messages.json')
     arr.forEach(arrElement => {
       messageWrapper.innerHTML+= `
       <div class="messages_list-message-wrapper">
-                    <div class="message-user_avatar-wrapper" id="_${arrElement.user_id}">
-                        
+                    <div class="message-user_avatar-wrapper" id="_${arrElement.user_id}">    
                     </div>
                     <div class="message-user_information_and_message_text-wrapper">
                         <div class="message-user_information-wrapper">
@@ -33,6 +32,7 @@ fetch('https://burtovoy.github.io/messages.json')
                         </div>
                         <div class="message-content-wrapper">
                             <p class="message-content-text text"> ${arrElement.message} </p>
+                            ${arrElement.img_message? ` <img src="${arrElement.img_message}" alt="mans playing table tennis" class="message-contetn-img">`:``}
                         </div>
                         <div class="message-reactions-wrapper">
                             <div class="message-reaction-wrapper">

@@ -228,6 +228,8 @@ body{
 }
 
 .message-contetn-img {
+    width: 260px;
+    height: 171px;
     margin-top: 10px;
 }
 
