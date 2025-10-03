@@ -74,6 +74,6 @@ export default function convertTime(postDate, currentDate) {
       text = `${secToYear} лет`;
     }
   }
-  const timeText = `${text} назад`;
+  const timeText = `${text} <br> назад`;
   return timeText;
 }
