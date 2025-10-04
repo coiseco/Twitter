@@ -13,6 +13,7 @@ fetch('https://burtovoy.github.io/messages.json')
     return response.json();
   })
   .then((data) => {
+    document.querySelector('#message-preloader').style.display='none'
     let messageWrapper = document.querySelector('#messageWrapper')
     let arr = data.messages
     arr.forEach(arrElement => {
