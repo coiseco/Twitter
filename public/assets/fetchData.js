@@ -2,23 +2,27 @@ import convertTime from './convertTime.js';
 
 
 function stringTimeToISO(stringTime) {
-  let [date,time] = stringTime.split(' ')
-  let [day, month, year] = date.split('.')
-  let [hour,minutes] = time.split(':')
-  return new Date(year,month - 1 ,day,hour,minutes)
+    let [date, time] = stringTime.split(' ')
+    let [day, month, year] = date.split('.')
+    let [hour, minutes] = time.split(':')
+    return new Date(year, month - 1, day, hour, minutes)
 }
 
-fetch('https://burtovoy.github.io/messages.json')
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    document.querySelector('#message-preloader').style.display='none'
-    let messageWrapper = document.querySelector('#messageWrapper')
-    let arr = data.messages
-    arr.forEach(arrElement => {
-      messageWrapper.innerHTML+= `
-      <div class="messages_list-message-wrapper">
+
+
+function fetchData() {
+    console.log("функция сработала")
+    fetch('https://burtovoy.github.io/messages.json')
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            document.querySelector('#message-preloader').style.display = 'none'
+            let messageWrapper = document.querySelector('#messageWrapper')
+            data.messages.forEach(arrElement => {
+                
+                messageWrapper.innerHTML += `
+      <div class="messages_list-message-wrapper" id="№${arrElement.user_id}">
                     <div class="message-user_avatar-wrapper" id="_${arrElement.user_id}">    
                     </div>
                     <div class="message-user_information_and_message_text-wrapper">
@@ -28,12 +32,12 @@ fetch('https://burtovoy.github.io/messages.json')
                                 <p class="user_information-user_nickname text">${arrElement.mail}</p>
                             </div>
                             <div class="message-time_ago-wrapper">
-                                <p class="message-time_ago text">${convertTime(stringTimeToISO(arrElement.date),new Date())}</p>
+                                <p class="message-time_ago text">${convertTime(stringTimeToISO(arrElement.date), new Date())}</p>
                             </div>
                         </div>
                         <div class="message-content-wrapper">
                             <p class="message-content-text text"> ${arrElement.message} </p>
-                            ${arrElement.img_message? ` <img src="${arrElement.img_message}" alt="mans playing table tennis" class="message-contetn-img">`:``}
+                            ${arrElement.img_message ? ` <img src="${arrElement.img_message}" alt="mans playing table tennis" class="message-contetn-img">` : ``}
                         </div>
                         <div class="message-reactions-wrapper">
                             <div class="message-reaction-wrapper">
@@ -55,27 +59,27 @@ fetch('https://burtovoy.github.io/messages.json')
                     </div>
                 </div>
       `
-    })
-  });
+            })
+        });
 
-fetch('https://burtovoy.github.io/pictures.json')
-  .then((response) => {
-    return response.json()
-  })
-  .then((data) => {
-      data.pictures.forEach(el => {
-        let thisWrapper = document.querySelector(`#_${el.user_id}`)
-        thisWrapper.innerHTML = `<img src="${el.url}" alt="user avatar image" class="message-user_avatar">`
-      })
-    })
+    fetch('https://burtovoy.github.io/pictures.json')
+        .then((response) => {
+            return response.json()
+        })
+        .then((data) => {
+            data.pictures.forEach(el => {
+                let thisWrapper = document.querySelector(`#_${el.user_id}`)
+                thisWrapper.innerHTML = `<img src="${el.url}" alt="user avatar image" class="message-user_avatar">`
+            })
+        })
 
-fetch('https://burtovoy.github.io/statistic.json')
-    .then((respons) => {
-        return respons.json()
-    })
-    .then((data) => {
-        let scoreWrapper = document.querySelector('#scoreWrapper')
-        scoreWrapper.innerHTML = `
+    fetch('https://burtovoy.github.io/statistic.json')
+        .then((respons) => {
+            return respons.json()
+        })
+        .then((data) => {
+            let scoreWrapper = document.querySelector('#scoreWrapper')
+            scoreWrapper.innerHTML = `
             <div class="score-users_counter-wrapper">
                     <h4 class="user_counter-header score-header">${data.statistic.usersRegistr}</h4>
                     <p class="user_counter-text score-text text">Пользователей<br>зарегистрировано</p>
@@ -89,6 +93,25 @@ fetch('https://burtovoy.github.io/statistic.json')
                     <p class="today_message_counter-text score-text text">Написано<br>сегодня</p>
                 </div>
         `
-    })    
+        })
 
-  
+}
+
+fetchData()
+
+function dataArrFunc(params) {
+    fetch('https://burtovoy.github.io/messages.json')
+        .then((response) => response.json())
+        .then((data) => {
+            data.messages.forEach(element => {
+                let idItem = document.querySelector(`#№${element.user_id}`)
+                if(idItem){
+                    idItem.querySelector('.message-time_ago').innerHTML = convertTime(stringTimeToISO(element.date), new Date())
+                }
+            })
+        })
+}
+
+
+
+setInterval(dataArrFunc, 5000)
