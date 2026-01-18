@@ -1,0 +1,91 @@
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-logo-wrapper{
+    margin: 24px 0px 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-header-wrapper{
+    margin: 0px 16px 22px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-header-text{
+    font-family: 'Lato-Medium', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    margin: 0;
+}
+
+.banner-buttons-wrapper{
+    margin: 0px 16px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.button{
+    padding: 15px 0px 15px 0px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    border: 1px solid #0057FF;
+    font-family: 'Lato-Medium', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.banner-buttons-sign_up_button{
+    background-color: #0057FF;
+    
+}
+
+.banner-buttons-sign_in_button{
+    color: #0057FF;
+}
+
+.banner-img-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-score-wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: #0057FF;
+    gap: 32px;
+    padding: 36px 0;
+}
+
+
+.score-header{
+    font-family: 'Lato-Regular', sans-serif;
+    font-weight:400 ;
+    font-size: 48px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
+
+.score-text{
+    font-family: 'Lato-Regular', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
